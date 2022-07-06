@@ -40,7 +40,7 @@ body {
 }
 
 .main-container {
-    width: 80vw;
+    width: 70vw;
     display: grid;
     justify-items: center;
     align-items: center;
