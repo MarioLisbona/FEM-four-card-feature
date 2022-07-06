@@ -73,6 +73,11 @@ body {
     margin-top: 2em;
 }
 
+.card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
 .info-container {
     grid-area: 1 / 1 / 2 / 4;
     width: 100%;
