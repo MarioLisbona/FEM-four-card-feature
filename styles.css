@@ -40,13 +40,13 @@ body {
 }
 
 .main-container {
-    width: 70vw;
+    width: 80vw;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10em repeat(2, 1fr);
-    grid-gap: 1em;
+    gap: 2em;
 }
 
 .card {
@@ -153,12 +153,13 @@ body {
 
 /* Frontend Mentor Footer */
 .attribution {
+    margin-top: 1em;
     font-size: 11px;
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     bottom: 15px;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 .attribution a { 
     color: var(--very-dark-blue);
