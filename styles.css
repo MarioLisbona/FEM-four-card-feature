@@ -1,6 +1,15 @@
 /* =================ROOT========================*/
 :root {
+    /* Primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
 
+    /* Neutral */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
 }
 /* =================/ROOT========================*/
 
@@ -14,10 +23,120 @@
 }
 /* =================/RESETS========================*/
 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grayish-blue);
+    line-height: 1.1;
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 80vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10em repeat(2, 1fr);
+    grid-gap: 2em;
+}
+
+.card {
+    background-color: white;
+    width: 23em;
+    height: 15em;
+    border-radius: .3em;
+    padding: 1em 2em;
+    border-top: 3px solid black;
+    box-shadow: 0 0 10px 0 var(--grayish-blue);
+}
+
+.card .card-info {
+    font-weight: 200;
+}
+
+.card * {
+    margin-top: .5em;
+}
+
+.card-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.info-container {
+    grid-area: 1 / 1 / 2 / 4;
+    width: 100%;
+    max-width: 33em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.info-container .title:first-child {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.info-container .title:last-child {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.info-container .title {
+    font-weight: 200;
+}
+
+.info-container .bold,
+.card .card-title {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.supervisor {
+    grid-area: 2 / 1 / 4 / 2;
+    justify-self: flex-end;
+    align-self: center ;
+    border-top-color: var(--cyan);
+}
+
+.team-builder {
+    grid-area: 2 / 2 / 3 / 3;
+    border-top-color: var(--red);
+}
+
+.karma {
+    grid-area: 3 / 2 / 4 / 3;
+    border-top-color: var(--orange);
+}
+
+.calculator {
+    grid-area: 2 / 3 / 4 / 4;
+    justify-self: flex-start;
+    align-self: center ;
+    border-top-color: var(--blue);
+}
+
+
+
+
 /* Frontend Mentor Footer */
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 1em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
